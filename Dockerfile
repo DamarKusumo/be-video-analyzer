@@ -27,6 +27,10 @@ COPY ./project ./project
 # Expose the port the app runs on
 EXPOSE 8000
 
+# Set environment variable for allowed origins (can be overridden at runtime)
+# Provide a sensible default for local development if not set
+ENV ALLOWED_ORIGINS="http://localhost:8000,http://127.0.0.1:8000,http://localhost:3000,http://127.0.0.1:3000"
+
 # Define the command to run the application
 # Use 0.0.0.0 to make it accessible from outside the container
 CMD ["uvicorn", "project.app.main:app", "--host", "0.0.0.0", "--port", "8000"]

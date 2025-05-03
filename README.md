@@ -11,9 +11,9 @@ This project provides an API endpoint to analyze video presentations, extracting
 
 ## Manual Setup & Execution
 
-1.  **Clone the repository (if applicable):**
+1.  **Clone the repository:**
     ```bash
-    git clone <your-repository-url>
+    git clone https://github.com/DamarKusumo/be-video-analyzer
     cd AI-Based-Video-Review
     ```
 
